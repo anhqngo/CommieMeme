@@ -1,8 +1,9 @@
 import requests
 import json
 import urllib2
+import random
 
-subreddits = ['FULLCOMMUNISM', 'dogswithsocks', 'celebrity']
+subreddits = ['FULLCOMMUNISM', 'aww', 'pics']
 
 def get_url():
     headers = {
@@ -18,6 +19,7 @@ def get_url():
         req = urllib2.Request(url, headers=headers)
         text_data = urllib2.urlopen(req).read()
         data = json.loads(text_data)
+        # i = random.randint(1,20)
         pic_url = data["data"]["children"][0]['data']['url']
         url_list.append(pic_url)
     return url_list
