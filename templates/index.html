@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,51 +12,63 @@
   <link rel="stylesheet" href="../static/css/w3.css">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--font awesome-->
   <title>Memes</title>
 </head>
 
 <!-- The information between the BODY and /BODY tags is displayed.-->
+
 <body>
-    <div class="w3-black" id="tour">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">Communist Memes</h2>
-        <p class="w3-opacity w3-center"><i>Communism is a hammer which we use to crush the enemy</i></p><br>
-  
-        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-          <!-- The First Block -->
-          <div class="w3-third w3-margin-bottom">
-            <p><b>r/FULLCOMMUNISM</b></p>
-            <img src= {{variable1}} alt="Communism Meme" style="width:100%" height=(same as width) class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-            </div>
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Communist Memes</h2>
+      <p class="w3-opacity w3-center">
+        <i>Communism is a hammer which we use to crush the enemy</i>
+      </p>
+      <br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <!-- The First Block -->
+        <div class="w3-third w3-margin-bottom">
+          <p>
+            <b>r/FULLCOMMUNISM</b>
+          </p>
+          <img src={ {variable1}} alt="Communism Meme" style="width:100%" height=(same as width) class="w3-hover-opacity">
+          <div class="w3-container w3-white">
           </div>
-
-          <!-- The Second Block -->
-          <div class="w3-third w3-margin-bottom">
-            <p><b>r/aww</b></p>
-            <img src= {{variable2}} alt="aww" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <form action="/" method="GET">
-                  <button name="generate" type="submit">Generate</button>
-              </form>
-              <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Generate</button> -->
-            </div>
-          </div>
-
-          <!-- The Third Block -->
-          <div class="w3-third w3-margin-bottom">
-              <p><b>r/pics</b></p>
-
-            <img src= {{variable3}} alt="Pics" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-            </div>
-          </div>
-
         </div>
+
+        <!-- The Second Block -->
+        <div class="w3-third w3-margin-bottom">
+          <p>
+            <b>r/aww</b>
+          </p>
+          <img src={ {variable2}} alt="aww" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <form action="/" method="GET">
+              <button name="generate" type="submit">Generate</button>
+            </form>
+            <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Generate</button> -->
+          </div>
+        </div>
+
+        <!-- The Third Block -->
+        <div class="w3-third w3-margin-bottom">
+          <p>
+            <b>r/pics</b>
+          </p>
+
+          <img src={ {variable3}} alt="Pics" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+          </div>
+        </div>
+
       </div>
     </div>
-  
-<!-- And add a copyright notice.-->
+  </div>
+
+  <!-- And add a copyright notice.-->
 </body>
+
 </html>
